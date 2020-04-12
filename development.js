@@ -40,15 +40,10 @@ export default {
         'images/*.{png,gif,webp,svg}'
       ],
       swDest: dist + '/sw.js',
-      //clientClaim: true,
-      //skipWaiting: true,
       runtimeCaching: [
         {
-          // urlPattern: new RegExp('^https://bst-cdn-image.s3-ap-northeast-1.amazonaws.com/'),
-          // urlPattern: new RegExp('^' + 'https://bst-cdn-image\.s3-ap-northeast-1\.amazonaws\.com/' + '.*'),
           // https://chojugiga.com/c/choju57_0019
           urlPattern: /^https:\/\/chojugiga\.com\/c\/choju57_0019.*$/,
-          // urlPattern: new RegExp('^https://bst-cdn-image.s3-ap-northeast-1.amazonaws.com/(.*)'),
           handler: 'CacheFirst',
           options: {
             cacheName: 'cdn-s3',
