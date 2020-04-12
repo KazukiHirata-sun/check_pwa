@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "webpack",
-    "start": "webpack-dev-server --hot",
-    "heroku-postbuild": "node heroku-special-command && webpack"
+    "start": "webpack-dev-server --hot"
   },
   "repository": {
     "type": "git",
