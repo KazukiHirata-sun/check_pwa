@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack-dev-server"
+    "build": "webpack",
+    "start": "webpack-dev-server --hot"
   },
   "repository": {
     "type": "git",
@@ -27,7 +27,9 @@
     "html-webpack-plugin": "^4.2.0",
     "webpack": "^4.42.1",
     "webpack-cli": "^3.3.11",
-    "webpack-dev-server": "^3.10.3"
+    "webpack-dev-server": "^3.10.3",
+    "workbox-sw": "^4.3.1",
+    "workbox-webpack-plugin": "^4.3.1"
   },
   "dependencies": {
     "react": "^16.13.1",
